@@ -1,1 +1,1 @@
-# dimdgroup-website
+# DIMD Group Website

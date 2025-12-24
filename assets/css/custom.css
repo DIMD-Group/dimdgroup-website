@@ -1,0 +1,141 @@
+/* Added by:
+    Elijah Manda 
+    elijahmandajc@gmail.com
+    https://github.com/elijahmanda
+    20/12/2020 5:05 PM
+*/
+/* Fix for mobile brand alignment */
+html {
+    scroll-behavior: smooth !important;
+}
+
+#our_brands_section .row {
+    justify-content: center;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+#our_brands_section .service-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px !important;
+    margin: 0 !important;
+}
+
+#our_brands_section .service-card-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#our_brands_section .service-card-thumb img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto !important;
+}
+
+/* Remove ALL padding from columns */
+#our_brands_section .col {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* Mobile - 2 per row */
+@media (max-width: 767px) {
+    #our_brands_section .row {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
+    
+    #our_brands_section .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #our_brands_section .service-card {
+        padding: 15px !important;
+        min-height: 120px;
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+
+/* Tablet - 3 per row */
+@media (min-width: 768px) and (max-width: 991px) {
+    #our_brands_section .col {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Desktop - 4 per row */
+@media (min-width: 992px) {
+    #our_brands_section .col {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Business Lines Grid */
+.business-lines-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.business-line-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #FF7000;
+    transition: all 0.3s ease;
+}
+
+.business-line-item:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.business-line-item i {
+    font-size: 24px;
+    color: #FF7000;
+}
+
+.business-line-item span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 576px) {
+    .business-lines-grid {
+        grid-template-columns: 1fr;
+    }
+}
